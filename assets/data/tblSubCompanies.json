@@ -1,0 +1,26 @@
+[
+    {
+        "subcompany_name": "شركة الندي",
+        "address": "70ب شارع العباسية - عبدة باشا - القاهرة",
+        "tax_card": "123456789",
+        "commercial_registration": "12345",
+        "fax": "224863232",
+        "email": "company@mail.com"
+    },
+    {
+        "subcompany_name": "شركة الايمان",
+        "address": "70ب شارع العباسية - عبدة باشا - القاهرة",
+        "tax_card": "123456789",
+        "commercial_registration": "12345",
+        "fax": "224863231",
+        "email": "company@mail.com"
+    },
+    {
+        "subcompany_name": "شركة بلاك جولد",
+        "address": "70ب شارع العباسية - عبدة باشا - القاهرة",
+        "tax_card": "123456789",
+        "commercial_registration": "12345",
+        "fax": "226844131",
+        "email": "company@mail.com"
+    }
+]

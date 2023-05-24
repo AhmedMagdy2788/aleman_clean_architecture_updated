@@ -1,0 +1,386 @@
+[
+    {
+        "date": "2020-11-01",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 2300.0,
+        "Notes": null
+    },
+    {
+        "date": "2020-12-01",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 2400.0,
+        "Notes": null
+    },
+    {
+        "date": "2021-02-05",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 9219.0,
+        "Notes": null
+    },
+    {
+        "date": "2021-03-29",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 6632.15,
+        "Notes": null
+    },
+    {
+        "date": "2021-04-06",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": -100.0,
+        "Notes": null
+    },
+    {
+        "date": "2021-07-07",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 92",
+        "product_no": 3,
+        "quantity": 1348.0,
+        "Notes": null
+    },
+    {
+        "date": "2021-09-30",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": -4645.0,
+        "Notes": null
+    },
+    {
+        "date": "2021-11-30",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 5000.0,
+        "Notes": null
+    },
+    {
+        "date": "2021-11-30",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": -1400.0,
+        "Notes": null
+    },
+    {
+        "date": "2021-11-30",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 92",
+        "product_no": 3,
+        "quantity": 1900.0,
+        "Notes": null
+    },
+    {
+        "date": "2021-12-31",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 2718.6,
+        "Notes": null
+    },
+    {
+        "date": "2021-12-31",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": 253.45,
+        "Notes": null
+    },
+    {
+        "date": "2021-12-31",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 92",
+        "product_no": 3,
+        "quantity": 721.76,
+        "Notes": null
+    },
+    {
+        "date": "2022-02-08",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 3727.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-03-02",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 3000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-03-02",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": 800.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-03-02",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 92",
+        "product_no": 3,
+        "quantity": 1500.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-04-01",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": 500.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-04-01",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 92",
+        "product_no": 3,
+        "quantity": 400.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-04-29",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": 280.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-04-29",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 92",
+        "product_no": 3,
+        "quantity": 900.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-05-11",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 2800.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-05-31",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 2000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-05-31",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": 400.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-05-31",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 92",
+        "product_no": 3,
+        "quantity": 600.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-08-01",
+        "station_name": "محطة الودي",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 5000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-08-01",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": 5250.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-08-01",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 92",
+        "product_no": 3,
+        "quantity": 900.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-08-09",
+        "station_name": "محطة الودي",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": 4750.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-01-01",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": -1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-01-03",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-01-13",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-01-19",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-02-12",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-02-18",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-03-14",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 2000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-04-01",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-05-19",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-06-14",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-07-28",
+        "station_name": "محطة أبو ساعد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-07-24",
+        "station_name": "محطة الايمان",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-02-06",
+        "station_name": "محطة الندي ",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": 4750.0,
+        "Notes": "تحويل 5000 لتر من الودي للندي"
+    },
+    {
+        "date": "2022-02-28",
+        "station_name": "محطة الندي ",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1400.0,
+        "Notes": null
+    },
+    {
+        "date": "2022-05-09",
+        "station_name": "محطة الندي ",
+        "product_name": "بنزين 80",
+        "product_no": 2,
+        "quantity": 2850.0,
+        "Notes": "تحويل 3000 لتر بنزين 80 من الودي"
+    },
+    {
+        "date": "2022-06-14",
+        "station_name": "محطة الندي ",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 675.0,
+        "Notes": "وارد مصطفي وحيد"
+    },
+    {
+        "date": "2022-01-02",
+        "station_name": "محطة محمد عماد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": "تعديل الرصيد مع رضا "
+    },
+    {
+        "date": "2022-02-07",
+        "station_name": "محطة محمد عماد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1229.35,
+        "Notes": "بدايه علي التانك فاضي"
+    },
+    {
+        "date": "2022-07-30",
+        "station_name": "محطة محمد عماد",
+        "product_name": "سولار",
+        "product_no": 1,
+        "quantity": 1000.0,
+        "Notes": "إضافة 1000 لتر الي التانك"
+    }
+]

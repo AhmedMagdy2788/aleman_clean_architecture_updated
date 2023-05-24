@@ -1,0 +1,66 @@
+[
+    {
+        "accountNo": 1,
+        "mainProductName": "سولار"
+    },
+    {
+        "accountNo": 1,
+        "mainProductName": "بنزين 80"
+    },
+    {
+        "accountNo": 1,
+        "mainProductName": "بنزين 92"
+    },
+    {
+        "accountNo": 2,
+        "mainProductName": "سولار"
+    },
+    {
+        "accountNo": 2,
+        "mainProductName": "بنزين 80"
+    },
+    {
+        "accountNo": 3,
+        "mainProductName": "سولار"
+    },
+    {
+        "accountNo": 3,
+        "mainProductName": "بنزين 80"
+    },
+    {
+        "accountNo": 4,
+        "mainProductName": "زيت"
+    },
+    {
+        "accountNo": 5,
+        "mainProductName": "زيت"
+    },
+    {
+        "accountNo": 6,
+        "mainProductName": "زيت"
+    },
+    {
+        "accountNo": 7,
+        "mainProductName": "سولار"
+    },
+    {
+        "accountNo": 8,
+        "mainProductName": "زيت"
+    },
+    {
+        "accountNo": 9,
+        "mainProductName": "مازوت"
+    },
+    {
+        "accountNo": 10,
+        "mainProductName": "مازوت"
+    },
+    {
+        "accountNo": 11,
+        "mainProductName": "مازوت"
+    },
+    {
+        "accountNo": 12,
+        "mainProductName": "مازوت"
+    }
+]

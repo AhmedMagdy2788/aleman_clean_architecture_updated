@@ -1,0 +1,98 @@
+[
+    {
+        "AccountNo": 1,
+        "Date": "2020-10-31",
+        "Subcompany_Name": "شركة الايمان",
+        "AccountsInterface": "محطة الودي",
+        "MarketingCompany": "بترومين",
+        "InitialDept": 525397.82
+    },
+    {
+        "AccountNo": 2,
+        "Date": "2020-10-31",
+        "Subcompany_Name": "شركة الندي",
+        "AccountsInterface": "محطة الندي ",
+        "MarketingCompany": "بترومين",
+        "InitialDept": -56019.39
+    },
+    {
+        "AccountNo": 3,
+        "Date": "2020-10-31",
+        "Subcompany_Name": "شركة بلاك جولد",
+        "AccountsInterface": "محطة محمد عماد",
+        "MarketingCompany": "بترومين",
+        "InitialDept": 296566.24
+    },
+    {
+        "AccountNo": 4,
+        "Date": "2020-10-31",
+        "Subcompany_Name": "شركة الايمان",
+        "AccountsInterface": "محطة الودي",
+        "MarketingCompany": "بترومين",
+        "InitialDept": -357.54
+    },
+    {
+        "AccountNo": 5,
+        "Date": "2020-10-31",
+        "Subcompany_Name": "شركة الندي",
+        "AccountsInterface": "محطة الندي ",
+        "MarketingCompany": "بترومين",
+        "InitialDept": -33052.8
+    },
+    {
+        "AccountNo": 6,
+        "Date": "2020-10-31",
+        "Subcompany_Name": "شركة بلاك جولد",
+        "AccountsInterface": "محطة محمد عماد",
+        "MarketingCompany": "بترومين",
+        "InitialDept": -357.0
+    },
+    {
+        "AccountNo": 7,
+        "Date": "2020-10-31",
+        "Subcompany_Name": "شركة الايمان",
+        "AccountsInterface": "محطة الايمان",
+        "MarketingCompany": "اكسون موبيل",
+        "InitialDept": 13127.15
+    },
+    {
+        "AccountNo": 8,
+        "Date": "2020-10-31",
+        "Subcompany_Name": "شركة الايمان",
+        "AccountsInterface": "محطة الايمان",
+        "MarketingCompany": "اكسون موبيل",
+        "InitialDept": 0.0
+    },
+    {
+        "AccountNo": 9,
+        "Date": "2020-09-30",
+        "Subcompany_Name": "شركة الندي",
+        "AccountsInterface": "شركة الندي",
+        "MarketingCompany": "بترومين",
+        "InitialDept": -103200.0
+    },
+    {
+        "AccountNo": 10,
+        "Date": "2020-09-30",
+        "Subcompany_Name": "شركة الندي",
+        "AccountsInterface": "شركة الندي",
+        "MarketingCompany": "غاز الشرق",
+        "InitialDept": 226475.11
+    },
+    {
+        "AccountNo": 11,
+        "Date": "2020-09-30",
+        "Subcompany_Name": "شركة الايمان",
+        "AccountsInterface": "شركة الايمان",
+        "MarketingCompany": "غاز الشرق",
+        "InitialDept": 9656.0
+    },
+    {
+        "AccountNo": 12,
+        "Date": "2020-09-30",
+        "Subcompany_Name": "شركة الايمان",
+        "AccountsInterface": "شركة الايمان",
+        "MarketingCompany": "مصر للبترول",
+        "InitialDept": 1717.85
+    }
+]

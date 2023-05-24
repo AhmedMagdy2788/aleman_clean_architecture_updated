@@ -1,0 +1,79 @@
+[
+    {
+        "marketing_comany": "اكسون موبيل",
+        "address": "cairo-egypt",
+        "phone": "227205219",
+        "email": "company@mail.com",
+        "fax": "227205219"
+    },
+    {
+        "marketing_comany": "الاهلية",
+        "address": "cairo-egypt",
+        "phone": "224863232",
+        "email": "company@mail.com",
+        "fax": "224863232"
+    },
+    {
+        "marketing_comany": "التعاون",
+        "address": "cairo-egypt",
+        "phone": "226844131",
+        "email": "company@mail.com",
+        "fax": "226844131"
+    },
+    {
+        "marketing_comany": "النيل",
+        "address": "cairo-egypt",
+        "phone": "225943106",
+        "email": "company@mail.com",
+        "fax": "225943106"
+    },
+    {
+        "marketing_comany": "بترومين",
+        "address": "cairo-egypt",
+        "phone": "225762562",
+        "email": "company@mail.com",
+        "fax": "225762562"
+    },
+    {
+        "marketing_comany": "توتال",
+        "address": "cairo-egypt",
+        "phone": "225582018",
+        "email": "company@mail.com",
+        "fax": "225582018"
+    },
+    {
+        "marketing_comany": "سوميك",
+        "address": "cairo-egypt",
+        "phone": "225401474",
+        "email": "company@mail.com",
+        "fax": "225401474"
+    },
+    {
+        "marketing_comany": "طاقة",
+        "address": "cairo-egypt",
+        "phone": "225220930",
+        "email": "company@mail.com",
+        "fax": "225220930"
+    },
+    {
+        "marketing_comany": "غاز الشرق",
+        "address": "cairo-egypt",
+        "phone": "225040386",
+        "email": "company@mail.com",
+        "fax": "225040386"
+    },
+    {
+        "marketing_comany": "ليبيا اويل",
+        "address": "cairo-egypt",
+        "phone": "224859842",
+        "email": "company@mail.com",
+        "fax": "224859842"
+    },
+    {
+        "marketing_comany": "مصر للبترول",
+        "address": "cairo-egypt",
+        "phone": "224679298",
+        "email": "company@mail.com",
+        "fax": "224679298"
+    }
+]

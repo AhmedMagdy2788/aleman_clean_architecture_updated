@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "كريم حنفي",
+        "address": "الودي",
+        "phone": 0,
+        "guarantor": "بلي"
+    },
+    {
+        "id": 2,
+        "name": "Ahmed Magdy",
+        "address": "Caior - Egypt",
+        "phone": 1140919108,
+        "guarantor": "none"
+    },
+    {
+        "id": 3,
+        "name": "ahmed magdy",
+        "address": "caior - egypt",
+        "phone": 1140919108,
+        "guarantor": "none"
+    },
+    {
+        "id": 4,
+        "name": "bojy",
+        "address": "maadi - cairo",
+        "phone": 1009656642,
+        "guarantor": "Ahmed Mgady"
+    }
+]

@@ -1,0 +1,1358 @@
+[
+    {
+        "date": "2020-01-01",
+        "product_Name": "تروس 140 4ك",
+        "product_no": 15,
+        "product_Selling_Price": 120.0
+    },
+    {
+        "date": "2020-01-01",
+        "product_Name": "دلفاك 20 ك",
+        "product_no": 25,
+        "product_Selling_Price": 820.0
+    },
+    {
+        "date": "2020-01-01",
+        "product_Name": "دلفاك 5 ك",
+        "product_no": 27,
+        "product_Selling_Price": 215.0
+    },
+    {
+        "date": "2020-01-01",
+        "product_Name": "ديو 40 (4ك)",
+        "product_no": 29,
+        "product_Selling_Price": 120.0
+    },
+    {
+        "date": "2020-01-01",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 35.0
+    },
+    {
+        "date": "2020-01-01",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 420.0
+    },
+    {
+        "date": "2020-08-01",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 6.33
+    },
+    {
+        "date": "2020-08-01",
+        "product_Name": "سولار",
+        "product_no": 1,
+        "product_Selling_Price": 6.8
+    },
+    {
+        "date": "2020-10-01",
+        "product_Name": "تروس 140 16 ك",
+        "product_no": 14,
+        "product_Selling_Price": 450.0
+    },
+    {
+        "date": "2020-10-30",
+        "product_Name": "ديو 40 (5ك)",
+        "product_no": 30,
+        "product_Selling_Price": 175.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "اكسترا سوبر 4ك",
+        "product_no": 7,
+        "product_Selling_Price": 150.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "باور 1ك",
+        "product_no": 9,
+        "product_Selling_Price": 90.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 6.33
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "بنزين 92",
+        "product_no": 3,
+        "product_Selling_Price": 7.5
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "تروس 140 4ك",
+        "product_no": 15,
+        "product_Selling_Price": 155.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "ديو 40 (4ك)",
+        "product_no": 29,
+        "product_Selling_Price": 140.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 44.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "سولار",
+        "product_no": 1,
+        "product_Selling_Price": 6.8
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 440.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "تروس 90 16ك",
+        "product_no": 20,
+        "product_Selling_Price": 400.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "تروس 90 4ك",
+        "product_no": 22,
+        "product_Selling_Price": 140.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "ديو 40 (20لتر)",
+        "product_no": 28,
+        "product_Selling_Price": 550.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "سوبر ديزل 50 (20 لتر)",
+        "product_no": 42,
+        "product_Selling_Price": 710.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "سوبر ديزل 50 (5ك)",
+        "product_no": 44,
+        "product_Selling_Price": 190.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "بستلة شحم",
+        "product_no": 71,
+        "product_Selling_Price": 800.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "فلتر ماستر 5 ك",
+        "product_no": 63,
+        "product_Selling_Price": 225.0
+    },
+    {
+        "date": "2020-10-31",
+        "product_Name": "شحم الاهلية 1ك",
+        "product_no": 55,
+        "product_Selling_Price": 75.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "اكسترا سوبر 1ك",
+        "product_no": 6,
+        "product_Selling_Price": 40.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "اكسترا سوبر 4ك",
+        "product_no": 7,
+        "product_Selling_Price": 140.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "باور 1ك",
+        "product_no": 9,
+        "product_Selling_Price": 75.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "دلفاك 20 ك",
+        "product_no": 25,
+        "product_Selling_Price": 820.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "دلفاك 4 ك",
+        "product_no": 26,
+        "product_Selling_Price": 215.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "ديو 40 (4ك)",
+        "product_no": 29,
+        "product_Selling_Price": 115.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 33.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "سوبر 1000 / 1",
+        "product_no": 38,
+        "product_Selling_Price": 77.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "سوبر 1000 / 4",
+        "product_no": 39,
+        "product_Selling_Price": 260.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "سوبر الترا",
+        "product_no": 40,
+        "product_Selling_Price": 265.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "سوبر ديزل 50 (20 لتر)",
+        "product_no": 42,
+        "product_Selling_Price": 690.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "سوبر ديزل 50 (5ك)",
+        "product_no": 44,
+        "product_Selling_Price": 195.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "شحم 1",
+        "product_no": 51,
+        "product_Selling_Price": 75.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "شحم 1/2",
+        "product_no": 52,
+        "product_Selling_Price": 50.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "فلت ماستر",
+        "product_no": 61,
+        "product_Selling_Price": 820.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "مخصوص 20",
+        "product_no": 64,
+        "product_Selling_Price": 610.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "مخصوص 5",
+        "product_no": 65,
+        "product_Selling_Price": 170.0
+    },
+    {
+        "date": "2020-11-19",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 400.0
+    },
+    {
+        "date": "2020-12-31",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 400.0
+    },
+    {
+        "date": "2021-01-01",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 370.0
+    },
+    {
+        "date": "2021-01-01",
+        "product_Name": "بستلة شحم",
+        "product_no": 71,
+        "product_Selling_Price": 840.0
+    },
+    {
+        "date": "2021-01-06",
+        "product_Name": "ديو 40 (5ك)",
+        "product_no": 30,
+        "product_Selling_Price": 135.0
+    },
+    {
+        "date": "2021-01-06",
+        "product_Name": "موبيل 1000 1ك",
+        "product_no": 66,
+        "product_Selling_Price": 77.0
+    },
+    {
+        "date": "2021-01-30",
+        "product_Name": "ديو 40 (20لتر)",
+        "product_no": 28,
+        "product_Selling_Price": 590.0
+    },
+    {
+        "date": "2021-03-01",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 6.33
+    },
+    {
+        "date": "2021-03-01",
+        "product_Name": "بنزين 92",
+        "product_no": 3,
+        "product_Selling_Price": 7.5
+    },
+    {
+        "date": "2021-03-01",
+        "product_Name": "سولار",
+        "product_no": 1,
+        "product_Selling_Price": 6.8
+    },
+    {
+        "date": "2021-03-19",
+        "product_Name": "الترا7 4ك",
+        "product_no": 8,
+        "product_Selling_Price": 265.0
+    },
+    {
+        "date": "2021-04-23",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 6.58
+    },
+    {
+        "date": "2021-04-23",
+        "product_Name": "بنزين 92",
+        "product_no": 3,
+        "product_Selling_Price": 7.75
+    },
+    {
+        "date": "2021-04-24",
+        "product_Name": "شحم الاهلية 1ك",
+        "product_no": 55,
+        "product_Selling_Price": 40.0
+    },
+    {
+        "date": "2021-04-24",
+        "product_Name": "شحم ام بي 3 1ك",
+        "product_no": 58,
+        "product_Selling_Price": 70.0
+    },
+    {
+        "date": "2021-04-24",
+        "product_Name": "هيدرولك 46-16 ك",
+        "product_no": 69,
+        "product_Selling_Price": 370.0
+    },
+    {
+        "date": "2021-06-30",
+        "product_Name": "ديو 40 (4ك)",
+        "product_no": 29,
+        "product_Selling_Price": 115.0
+    },
+    {
+        "date": "2021-06-30",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 33.0
+    },
+    {
+        "date": "2021-06-30",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 370.0
+    },
+    {
+        "date": "2021-07-01",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 6.58
+    },
+    {
+        "date": "2021-07-01",
+        "product_Name": "بنزين 92",
+        "product_no": 3,
+        "product_Selling_Price": 7.75
+    },
+    {
+        "date": "2021-07-01",
+        "product_Name": "سولار",
+        "product_no": 1,
+        "product_Selling_Price": 6.8
+    },
+    {
+        "date": "2021-07-24",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 6.83
+    },
+    {
+        "date": "2021-07-24",
+        "product_Name": "بنزين 92",
+        "product_no": 3,
+        "product_Selling_Price": 8.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "اكسترا سوبر 1ك",
+        "product_no": 6,
+        "product_Selling_Price": 46.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "اكسترا سوبر 4ك",
+        "product_no": 7,
+        "product_Selling_Price": 175.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "الترا7 4ك",
+        "product_no": 8,
+        "product_Selling_Price": 228.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "بترومين مونو  1ك",
+        "product_no": 12,
+        "product_Selling_Price": 47.5
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "بترومين مونو  4ك",
+        "product_no": 13,
+        "product_Selling_Price": 187.5
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "تروس 140 16 ك",
+        "product_no": 14,
+        "product_Selling_Price": 810.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "تروس 140 4ك",
+        "product_no": 15,
+        "product_Selling_Price": 206.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "تروس 140 W85-5-G1  - (1ك)",
+        "product_no": 16,
+        "product_Selling_Price": 57.5
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "تروس 140 W85-5-G1  - (4ك)",
+        "product_no": 17,
+        "product_Selling_Price": 222.5
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "تروس 90 16ك",
+        "product_no": 20,
+        "product_Selling_Price": 770.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "تروس 90 1ك",
+        "product_no": 21,
+        "product_Selling_Price": 57.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "تروس 90 4ك",
+        "product_no": 22,
+        "product_Selling_Price": 195.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "ديو 40 (20لتر)",
+        "product_no": 28,
+        "product_Selling_Price": 645.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "ديو 40 (4ك)",
+        "product_no": 29,
+        "product_Selling_Price": 140.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "ديو 40 (5ك)",
+        "product_no": 30,
+        "product_Selling_Price": 170.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 41.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "سوبر ديزل 50 (20 لتر)",
+        "product_no": 42,
+        "product_Selling_Price": 750.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "سوبر ديزل 50 (4ك)",
+        "product_no": 43,
+        "product_Selling_Price": 167.5
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "سوبر ديزل 50 (5ك)",
+        "product_no": 44,
+        "product_Selling_Price": 200.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "سوبر سينثيتيك 4ك",
+        "product_no": 45,
+        "product_Selling_Price": 560.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "سوبر سينثيتيك3ك",
+        "product_no": 47,
+        "product_Selling_Price": 420.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "سوبر فليت ماستر  20 لتر",
+        "product_no": 48,
+        "product_Selling_Price": 885.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "سوبر فليت ماستر5ك",
+        "product_no": 50,
+        "product_Selling_Price": 227.5
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "شحم ام بي 3 0.5ك",
+        "product_no": 56,
+        "product_Selling_Price": 50.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "شحم ام بي 3 1ك",
+        "product_no": 58,
+        "product_Selling_Price": 90.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "هيدرولك 37-16 ك",
+        "product_no": 68,
+        "product_Selling_Price": 470.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "هيدرولك 46-16 ك",
+        "product_no": 69,
+        "product_Selling_Price": 475.0
+    },
+    {
+        "date": "2021-08-05",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 460.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "اكسترا سوبر 1ك",
+        "product_no": 6,
+        "product_Selling_Price": 60.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "اكسترا سوبر 4ك",
+        "product_no": 7,
+        "product_Selling_Price": 215.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "الترا7 4ك",
+        "product_no": 8,
+        "product_Selling_Price": 350.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "بترومين مونو  1ك",
+        "product_no": 12,
+        "product_Selling_Price": 60.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "بترومين مونو  4ك",
+        "product_no": 13,
+        "product_Selling_Price": 215.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "تروس 140 16 ك",
+        "product_no": 14,
+        "product_Selling_Price": 890.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "تروس 140 4ك",
+        "product_no": 15,
+        "product_Selling_Price": 235.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "تروس 140 W85-5-G1  - (1ك)",
+        "product_no": 16,
+        "product_Selling_Price": 75.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "تروس 140 W85-5-G1  - (4ك)",
+        "product_no": 17,
+        "product_Selling_Price": 255.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "تروس 90 16ك",
+        "product_no": 20,
+        "product_Selling_Price": 850.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "تروس 90 1ك",
+        "product_no": 21,
+        "product_Selling_Price": 70.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "تروس 90 4ك",
+        "product_no": 22,
+        "product_Selling_Price": 220.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "ديو 40 (20لتر)",
+        "product_no": 28,
+        "product_Selling_Price": 825.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "ديو 40 (4ك)",
+        "product_no": 29,
+        "product_Selling_Price": 190.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "ديو 40 (5ك)",
+        "product_no": 30,
+        "product_Selling_Price": 225.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 60.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 60.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "سوبر ديزل 50 (20 لتر)",
+        "product_no": 42,
+        "product_Selling_Price": 920.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "سوبر ديزل 50 (4ك)",
+        "product_no": 43,
+        "product_Selling_Price": 205.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "سوبر ديزل 50 (5ك)",
+        "product_no": 44,
+        "product_Selling_Price": 250.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "سوبر سينثيتيك 4ك",
+        "product_no": 45,
+        "product_Selling_Price": 650.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "سوبر سينثيتيك3ك",
+        "product_no": 47,
+        "product_Selling_Price": 650.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "سوبر فليت ماستر  20 لتر",
+        "product_no": 48,
+        "product_Selling_Price": 990.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "سوبر فليت ماستر5ك",
+        "product_no": 50,
+        "product_Selling_Price": 265.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "شحم الاهلية 0.5ك",
+        "product_no": 53,
+        "product_Selling_Price": 20.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "شحم الاهلية 0.5ك الأصفر",
+        "product_no": 54,
+        "product_Selling_Price": 30.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "شحم ام بي 3 0.5ك",
+        "product_no": 56,
+        "product_Selling_Price": 70.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "شحم ام بي 3 1ك",
+        "product_no": 58,
+        "product_Selling_Price": 115.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "هيدرولك 37-16 ك",
+        "product_no": 68,
+        "product_Selling_Price": 540.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "هيدرولك 46-16 ك",
+        "product_no": 69,
+        "product_Selling_Price": 550.0
+    },
+    {
+        "date": "2021-08-14",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 560.0
+    },
+    {
+        "date": "2021-10-09",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 7.08
+    },
+    {
+        "date": "2021-10-09",
+        "product_Name": "بنزين 92",
+        "product_no": 3,
+        "product_Selling_Price": 8.25
+    },
+    {
+        "date": "2021-10-11",
+        "product_Name": "موبيل 1000 4ك",
+        "product_no": 67,
+        "product_Selling_Price": 235.0
+    },
+    {
+        "date": "2021-11-08",
+        "product_Name": "دلفاك 4 ك",
+        "product_no": 26,
+        "product_Selling_Price": 230.0
+    },
+    {
+        "date": "2022-01-01",
+        "product_Name": "عهدة",
+        "product_no": 71,
+        "product_Selling_Price": 1.0
+    },
+    {
+        "date": "2022-01-01",
+        "product_Name": "فلاتر",
+        "product_no": 72,
+        "product_Selling_Price": 10.0
+    },
+    {
+        "date": "2022-01-01",
+        "product_Name": "مناديل",
+        "product_no": 73,
+        "product_Selling_Price": 20.0
+    },
+    {
+        "date": "2022-01-01",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 560.0
+    },
+    {
+        "date": "2022-02-01",
+        "product_Name": "سوبر ديزل 50 (20 لتر)",
+        "product_no": 42,
+        "product_Selling_Price": 920.0
+    },
+    {
+        "date": "2022-02-04",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 7.33
+    },
+    {
+        "date": "2022-02-04",
+        "product_Name": "بنزين 92",
+        "product_no": 3,
+        "product_Selling_Price": 8.5
+    },
+    {
+        "date": "2022-02-14",
+        "product_Name": "سوبر الترا 4 لتر",
+        "product_no": 41,
+        "product_Selling_Price": 350.0
+    },
+    {
+        "date": "2022-04-15",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 7.58
+    },
+    {
+        "date": "2022-04-15",
+        "product_Name": "بنزين 92",
+        "product_no": 3,
+        "product_Selling_Price": 8.75
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "اكسترا سوبر 1ك",
+        "product_no": 6,
+        "product_Selling_Price": 60.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "اكسترا سوبر 4ك",
+        "product_no": 7,
+        "product_Selling_Price": 230.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "الترا7 4ك",
+        "product_no": 8,
+        "product_Selling_Price": 395.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "تروس 140 16 ك",
+        "product_no": 14,
+        "product_Selling_Price": 935.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "تروس 140 4ك",
+        "product_no": 15,
+        "product_Selling_Price": 235.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "تروس 90 16ك",
+        "product_no": 20,
+        "product_Selling_Price": 805.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "تروس 90 4ك",
+        "product_no": 22,
+        "product_Selling_Price": 208.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "ديو 40 (20لتر)",
+        "product_no": 28,
+        "product_Selling_Price": 840.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "ديو 40 (4ك)",
+        "product_no": 29,
+        "product_Selling_Price": 175.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "ديو 40 (5ك)",
+        "product_no": 30,
+        "product_Selling_Price": 215.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 50.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "سوبر ديزل 50 (20 لتر)",
+        "product_no": 42,
+        "product_Selling_Price": 990.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "سوبر ديزل 50 (4ك)",
+        "product_no": 43,
+        "product_Selling_Price": 215.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "سوبر ديزل 50 (5ك)",
+        "product_no": 44,
+        "product_Selling_Price": 265.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "سوبر سينثيتيك 4ك",
+        "product_no": 45,
+        "product_Selling_Price": 785.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "سوبر سينثيتيك3ك",
+        "product_no": 47,
+        "product_Selling_Price": 785.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "شحم ام بي 3 0.5ك",
+        "product_no": 56,
+        "product_Selling_Price": 80.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "شحم ام بي 3 1ك",
+        "product_no": 58,
+        "product_Selling_Price": 140.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "فلت ماستر",
+        "product_no": 61,
+        "product_Selling_Price": 1095.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "هيدرولك 37-16 ك",
+        "product_no": 68,
+        "product_Selling_Price": 590.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "هيدرولك 37-16 ك",
+        "product_no": 68,
+        "product_Selling_Price": 590.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "هيدرولك 46-16 ك",
+        "product_no": 69,
+        "product_Selling_Price": 590.0
+    },
+    {
+        "date": "2022-05-19",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 590.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "اكسترا سوبر 1ك",
+        "product_no": 6,
+        "product_Selling_Price": 70.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "اكسترا سوبر 4ك",
+        "product_no": 7,
+        "product_Selling_Price": 250.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "بترومين مونو  1ك",
+        "product_no": 12,
+        "product_Selling_Price": 65.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "بترومين مونو  4ك",
+        "product_no": 13,
+        "product_Selling_Price": 230.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "تروس 140 16 ك",
+        "product_no": 14,
+        "product_Selling_Price": 965.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "تروس 140 4ك",
+        "product_no": 15,
+        "product_Selling_Price": 245.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "تروس 140 W85-5-G1  - (4ك)",
+        "product_no": 17,
+        "product_Selling_Price": 295.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "تروس 90 16ك",
+        "product_no": 20,
+        "product_Selling_Price": 835.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "تروس 90 4ك",
+        "product_no": 22,
+        "product_Selling_Price": 220.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "ديو 40 (20لتر)",
+        "product_no": 28,
+        "product_Selling_Price": 930.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "ديو 40 (4ك)",
+        "product_no": 29,
+        "product_Selling_Price": 195.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "ديو 40 (5ك)",
+        "product_no": 30,
+        "product_Selling_Price": 240.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 55.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "ديو 50 (4لتر)",
+        "product_no": 32,
+        "product_Selling_Price": 195.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "سوبر الترا",
+        "product_no": 40,
+        "product_Selling_Price": 450.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "سوبر ديزل 50 (20 لتر)",
+        "product_no": 42,
+        "product_Selling_Price": 1110.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "سوبر ديزل 50 (4ك)",
+        "product_no": 43,
+        "product_Selling_Price": 240.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "سوبر ديزل 50 (5ك)",
+        "product_no": 44,
+        "product_Selling_Price": 295.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "سوبر سينثيتيك1ك",
+        "product_no": 46,
+        "product_Selling_Price": 850.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "شحم ام بي 3 0.5ك",
+        "product_no": 56,
+        "product_Selling_Price": 85.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "شحم ام بي 3 16ك",
+        "product_no": 57,
+        "product_Selling_Price": 1725.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "شحم ام بي 3 1ك",
+        "product_no": 58,
+        "product_Selling_Price": 140.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "فلت ماستر 20 ك",
+        "product_no": 62,
+        "product_Selling_Price": 1415.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "فلتر ماستر 5 ك",
+        "product_no": 63,
+        "product_Selling_Price": 365.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "هيدرولك 37-16 ك",
+        "product_no": 68,
+        "product_Selling_Price": 625.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "هيدرولك 46-16 ك",
+        "product_no": 69,
+        "product_Selling_Price": 625.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 625.0
+    },
+    {
+        "date": "2022-06-10",
+        "product_Name": "فلتر ماستر 5 ك",
+        "product_no": 63,
+        "product_Selling_Price": 365.0
+    },
+    {
+        "date": "2022-06-24",
+        "product_Name": "دلفاك 20 ك",
+        "product_no": 25,
+        "product_Selling_Price": 1600.0
+    },
+    {
+        "date": "2022-07-12",
+        "product_Name": "بنزين 80",
+        "product_no": 2,
+        "product_Selling_Price": 8.08
+    },
+    {
+        "date": "2022-07-12",
+        "product_Name": "بنزين 92",
+        "product_no": 3,
+        "product_Selling_Price": 9.25
+    },
+    {
+        "date": "2022-07-12",
+        "product_Name": "سولار",
+        "product_no": 1,
+        "product_Selling_Price": 7.3
+    },
+    {
+        "date": "2022-07-30",
+        "product_Name": "شحم فيروس 1ك",
+        "product_no": 74,
+        "product_Selling_Price": 25.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "اكسترا سوبر 1ك",
+        "product_no": 6,
+        "product_Selling_Price": 75.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "اكسترا سوبر 4ك",
+        "product_no": 7,
+        "product_Selling_Price": 265.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "بترومين مونو  1ك",
+        "product_no": 12,
+        "product_Selling_Price": 70.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "بترومين مونو  4ك",
+        "product_no": 13,
+        "product_Selling_Price": 245.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "تروس 140 16 ك",
+        "product_no": 14,
+        "product_Selling_Price": 1045.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "تروس 140 4ك",
+        "product_no": 15,
+        "product_Selling_Price": 265.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "تروس 140 W85-5-G1  - (4ك)",
+        "product_no": 17,
+        "product_Selling_Price": 345.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "تروس 90 16ك",
+        "product_no": 20,
+        "product_Selling_Price": 855.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "تروس 90 4ك",
+        "product_no": 22,
+        "product_Selling_Price": 225.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "ديو 40 (20لتر)",
+        "product_no": 28,
+        "product_Selling_Price": 970.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "ديو 40 (4ك)",
+        "product_no": 29,
+        "product_Selling_Price": 205.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "ديو 40 (5ك)",
+        "product_no": 30,
+        "product_Selling_Price": 250.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "ديو 50 (1ك)",
+        "product_no": 33,
+        "product_Selling_Price": 60.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "ديو 50 (4لتر)",
+        "product_no": 32,
+        "product_Selling_Price": 205.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "سوبر الترا",
+        "product_no": 40,
+        "product_Selling_Price": 465.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "سوبر ديزل 50 (20 لتر)",
+        "product_no": 42,
+        "product_Selling_Price": 1140.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "سوبر ديزل 50 (4ك)",
+        "product_no": 43,
+        "product_Selling_Price": 250.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "سوبر ديزل 50 (5ك)",
+        "product_no": 44,
+        "product_Selling_Price": 305.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "سوبر سينثيتيك1ك",
+        "product_no": 46,
+        "product_Selling_Price": 240.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "شحم ام بي 3 0.5ك",
+        "product_no": 56,
+        "product_Selling_Price": 95.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "شحم ام بي 3 16ك",
+        "product_no": 57,
+        "product_Selling_Price": 2075.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "شحم ام بي 3 1ك",
+        "product_no": 58,
+        "product_Selling_Price": 170.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "فلت ماستر 20 ك",
+        "product_no": 62,
+        "product_Selling_Price": 1515.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "فلتر ماستر 5 ك",
+        "product_no": 63,
+        "product_Selling_Price": 390.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "هيدرولك 37-16 ك",
+        "product_no": 68,
+        "product_Selling_Price": 650.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "هيدرولك 46-16 ك",
+        "product_no": 69,
+        "product_Selling_Price": 650.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "هيدرولك 68-16 ك",
+        "product_no": 70,
+        "product_Selling_Price": 650.0
+    },
+    {
+        "date": "2022-08-09",
+        "product_Name": "فلتر ماستر 5 ك",
+        "product_no": 63,
+        "product_Selling_Price": 390.0
+    },
+    {
+        "date": "2021-02-01",
+        "product_Name": "هيدرولك 37-16 ك",
+        "product_no": 68,
+        "product_Selling_Price": 380.0
+    }
+]

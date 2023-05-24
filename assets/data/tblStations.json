@@ -1,0 +1,37 @@
+[
+    {
+        "station_id": 1,
+        "station_name": "محطة الودي",
+        "owner_company": "شركة الايمان",
+        "location": "الودي",
+        "partner_ship": "بترومين"
+    },
+    {
+        "station_id": 2,
+        "station_name": "محطة أبو ساعد",
+        "owner_company": "شركة الايمان",
+        "location": "أبو ساعد",
+        "partner_ship": "مصر للبترول"
+    },
+    {
+        "station_id": 3,
+        "station_name": "محطة الايمان",
+        "owner_company": "شركة الايمان",
+        "location": "أبو ساعد",
+        "partner_ship": "اكسون موبيل"
+    },
+    {
+        "station_id": 4,
+        "station_name": "محطة الندي ",
+        "owner_company": "شركة الندي",
+        "location": "الصف",
+        "partner_ship": "بترومين"
+    },
+    {
+        "station_id": 5,
+        "station_name": "محطة محمد عماد",
+        "owner_company": "شركة بلاك جولد",
+        "location": "أبو ساعد",
+        "partner_ship": "بترومين"
+    }
+]
