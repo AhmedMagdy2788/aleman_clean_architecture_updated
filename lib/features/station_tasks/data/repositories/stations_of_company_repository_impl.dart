@@ -61,12 +61,11 @@ class StationOfCompanyRepositoryImpl implements StationOfCompanyRepository {
     if (await networkInfo.isConnected) {
       //should call the remot data source to get number trivia
       try {
-        List<StationServerModel> dbData =
-            await dbDataSource.getRawTableRows<StationServerModel>(
-                '${StationServerModel.ENDPOINT}/GetstationsOrderedByID',
-                StationServerModel.fromJson,
-                null,
-                (stationModel) => stationModel.ownerCompany == subcompanyName);
+        List<StationServerModel> dbData = await dbDataSource.getRawTableRows<
+                StationServerModel>(
+            '${StationServerModel.ENDPOINT}${StationServerModel.GetByOwnerCompany}',
+            StationServerModel.fromJson,
+            "?ownerCompany=$subcompanyName");
         // jsonDataSource.updateJsonSource(StationJSONModel.TABLENAME, dbData);
         responce = Right(dbData);
       } catch (e) {

@@ -5,6 +5,7 @@ import '../../../domain/entities/station_entity.dart';
 
 class StationServerModel extends StationEntity implements ServerModel {
   static const String ENDPOINT = 'Stations';
+  static const String GetByOwnerCompany = '/GetByOwnerCompany';
   static const String ID = "station_id";
   static const String NAME = "station_name";
   static const String OWNER_COMPANY = "owner_company";

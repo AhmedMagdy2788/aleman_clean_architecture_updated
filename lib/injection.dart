@@ -100,7 +100,7 @@ Future<void> init() async {
   sl.registerLazySingleton<RawTableJsonDataSource>(
       () => RawTableJsonDataSourceImpl(directory: "assets/data"));
   sl.registerLazySingleton<RawTableDBDataSource>(
-      () => RawTableDBDataSourceImpl(uriLink: 'https://localhost:7072/api/'));
+      () => RawTableDBDataSourceImpl(uriLink: 'https://localhost:44316/api/'));
 
   //! Core
   sl.registerLazySingleton<NetworkInfo>(

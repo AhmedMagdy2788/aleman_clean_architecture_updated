@@ -101,6 +101,50 @@ class PumpOnTankEntity extends Equatable {
   List<Object?> get props => [workOnDate, tankNO, pumpId];
 }
 
+class PumpTankDetailDtoEntity extends PumpTankDetailEntity {
+  final String pumpName;
+  final String tankName;
+  final String tankContentType;
+
+  const PumpTankDetailDtoEntity({
+    required super.date,
+    required super.pumpNo,
+    required super.tankNo,
+    required this.pumpName,
+    required this.tankName,
+    required this.tankContentType,
+  });
+
+  @override
+  List<Object?> get props => [
+        date,
+        pumpNo,
+        tankNo,
+        pumpName,
+        tankName,
+        tankContentType,
+      ];
+}
+
+class PumpTankDetailEntity extends Equatable {
+  final DateTime date;
+  final int pumpNo;
+  final int tankNo;
+
+  const PumpTankDetailEntity({
+    required this.date,
+    required this.pumpNo,
+    required this.tankNo,
+  });
+
+  @override
+  List<Object?> get props => [
+        date,
+        pumpNo,
+        tankNo,
+      ];
+}
+
 class CounterEntity extends Equatable {
   final int counterId;
   final String counterName;

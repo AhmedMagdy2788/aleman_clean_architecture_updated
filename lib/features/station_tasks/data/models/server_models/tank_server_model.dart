@@ -7,6 +7,13 @@ import '../../../domain/entities/tanks_pumps_counters_entity.dart';
 
 class TankServerModel extends TankEntity implements ServerModel {
   static const String ENDPOINT = 'Tanks';
+  static const String GetAll = 'Tanks/GetAll';
+  static const String GetByTankNo = 'Tanks/GetByTankNo';
+  static const String GetByStationName = 'Tanks/GetByStationName';
+  static const String Addtank = 'Tanks/Addtank';
+  static const String AddRangeOftanks = 'Tanks/AddRangeOftanks';
+  static const String Updatetank = 'Tanks/Updatetank';
+  static const String Deletetank = 'Tanks/Deletetank';
   static const String ID = "tank_No";
   static const String NAME = "tank_Name";
   static const String STATION_NAME = "station_Name";
@@ -73,7 +80,7 @@ class TankContaintTypeServerModel extends TankContentTypeEntity
 
   factory TankContaintTypeServerModel.fromJson(Map<String, dynamic> json) {
     return TankContaintTypeServerModel(
-      date: DateFormat("yyyy-MM-dd").parse(json[DATE]),
+      date: DateFormat("yyyy-MM-ddTHH:mm:ss").parse(json[DATE]),
       tankNo: json[TANK_NO],
       productName: json[PRODUCT_NAME],
     );
@@ -82,7 +89,7 @@ class TankContaintTypeServerModel extends TankContentTypeEntity
   @override
   Map<String, dynamic> toJson() {
     return {
-      DATE: DateFormat("yyyy-MM-dd").format(date),
+      DATE: DateFormat("yyyy-MM-ddTHH:mm:ss").format(date),
       TANK_NO: tankNo,
       PRODUCT_NAME: productName,
     };
@@ -104,7 +111,7 @@ class TanksDailyMeasurementServerModel extends TanksDailyMeasurementEntity
 
   factory TanksDailyMeasurementServerModel.fromJson(Map<String, dynamic> json) {
     return TanksDailyMeasurementServerModel(
-        date: DateFormat("yyyy-MM-dd").parse(json[DATE]),
+        date: DateFormat("yyyy-MM-ddTHH:mm:ss").parse(json[DATE]),
         tankNo: json[TANK_NO],
         quantity: json[QUANTITY]);
   }
@@ -140,7 +147,7 @@ class TankEquilibriumServerModel extends TankEquilibriumEntity
 
   factory TankEquilibriumServerModel.fromJson(Map<String, dynamic> json) {
     return TankEquilibriumServerModel(
-      date: DateFormat("yyyy-MM-dd").parse(json[DATE]),
+      date: DateFormat("yyyy-MM-ddTHH:mm:ss").parse(json[DATE]),
       stationName: json[STATION_NAME],
       productName: json[PRODUCT_NAME],
       productNo: json[PRODUCT_NO],
@@ -193,7 +200,7 @@ class PumpOnTankServerModel extends PumpOnTankEntity implements ServerModel {
 
   factory PumpOnTankServerModel.fromJson(Map<String, dynamic> json) {
     return PumpOnTankServerModel(
-      workOnDate: DateFormat("yyyy-MM-dd").parse(json[WORK_ON_DATE]),
+      workOnDate: DateFormat("yyyy-MM-ddTHH:mm:ss").parse(json[WORK_ON_DATE]),
       tankNO: json[TANK_NO],
       pumpId: json[PUMP_ID],
     );
@@ -205,6 +212,93 @@ class PumpOnTankServerModel extends PumpOnTankEntity implements ServerModel {
       WORK_ON_DATE: workOnDate,
       TANK_NO: tankNO,
       PUMP_ID: pumpId,
+    };
+  }
+}
+
+class PumpTankDetailDtoServerModel extends PumpTankDetailDtoEntity
+    implements ServerModel {
+  static const String ENDPOINT = 'PumpsTanksDetails';
+  static const String GetStationPumpTankDetailDtoAtGenralDate =
+      '/GetStationPumpTankDetailDtoAtGenralDate';
+  static const String DATE = "date";
+  static const String PUMP_NO = "pump_No";
+  static const String PUMP_NAME = "pump_Name";
+  static const String TANK_NO = "tank_No";
+  static const String TANK_NAME = "tank_Name";
+  static const String TANK_CONTENT_TYPE = "tankContentType";
+
+  const PumpTankDetailDtoServerModel({
+    required super.date,
+    required super.pumpNo,
+    required super.pumpName,
+    required super.tankNo,
+    required super.tankName,
+    required super.tankContentType,
+  });
+
+  factory PumpTankDetailDtoServerModel.fromJson(Map<String, dynamic> json) {
+    return PumpTankDetailDtoServerModel(
+      date: DateFormat("yyyy-MM-ddTHH:mm:ss").parse(json[DATE]),
+      pumpNo: json[PUMP_NO],
+      pumpName: json[PUMP_NAME],
+      tankNo: json[TANK_NO],
+      tankName: json[TANK_NAME],
+      tankContentType: json[TANK_CONTENT_TYPE],
+    );
+  }
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      DATE: DateFormat("yyyy-MM-ddTHH:mm:ss").format(date),
+      PUMP_NO: pumpNo,
+      PUMP_NAME: pumpName,
+      TANK_NO: tankNo,
+      TANK_NAME: tankName,
+      TANK_CONTENT_TYPE: tankContentType,
+    };
+  }
+}
+
+class PumpTankDetailServerModel extends PumpTankDetailEntity
+    implements ServerModel<PumpTankDetailEntity> {
+  static const String ENDPOINT = 'PumpsTanksDetails';
+  static const String GetAllPumpInstallations = '/GetAllPumpInstallations';
+  static const String GetPumpsTanksDetailById = '/GetPumpsTanksDetailById';
+  static const String GetPumpTanksAtGeneralDate = '/GetPumpTanksAtGeneralDate';
+  static const String DATE = "date";
+  static const String PUMP_NO = "pump_No";
+  static const String TANK_NO = "tank_No";
+
+  const PumpTankDetailServerModel({
+    required super.date,
+    required super.pumpNo,
+    required super.tankNo,
+  });
+
+  factory PumpTankDetailServerModel.fromEntity(PumpTankDetailEntity entity) {
+    return PumpTankDetailServerModel(
+      date: entity.date,
+      pumpNo: entity.pumpNo,
+      tankNo: entity.tankNo,
+    );
+  }
+
+  factory PumpTankDetailServerModel.fromJson(Map<String, dynamic> json) {
+    return PumpTankDetailServerModel(
+      date: DateFormat("yyyy-MM-ddTHH:mm:ss").parse(json[DATE]),
+      pumpNo: json[PUMP_NO],
+      tankNo: json[TANK_NO],
+    );
+  }
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      DATE: DateFormat("yyyy-MM-ddTHH:mm:ss").format(date),
+      PUMP_NO: pumpNo,
+      TANK_NO: tankNo,
     };
   }
 }
@@ -243,7 +337,7 @@ class CounterOnPumpServerModel extends CounterOnPumpEntity
 
   factory CounterOnPumpServerModel.fromJson(Map<String, dynamic> json) {
     return CounterOnPumpServerModel(
-      workOnDate: DateFormat("yyyy-MM-dd").parse(json[WORK_ON_DATE]),
+      workOnDate: DateFormat("yyyy-MM-ddTHH:mm:ss").parse(json[WORK_ON_DATE]),
       counterNO: json[COUNTER_NO],
       pumpId: json[PUMP_ID],
     );
@@ -275,7 +369,7 @@ class CounterFeedbackAmountServerModel extends CounterFeedbackAmountEntity
   factory CounterFeedbackAmountServerModel.fromJson(Map<String, dynamic> json) {
     return CounterFeedbackAmountServerModel(
         dateOfCalibration:
-            DateFormat("yyyy-MM-dd").parse(json[DATE_OF_CALIBRATION]),
+            DateFormat("yyyy-MM-ddTHH:mm:ss").parse(json[DATE_OF_CALIBRATION]),
         counterNO: json[COUNTER_NO],
         feedbackAmount: json[FEEDBACK_AMOUNT]);
   }
@@ -305,7 +399,7 @@ class CounterDailyReadingServerModel extends CounterDailyReadingEntity
 
   factory CounterDailyReadingServerModel.fromJson(Map<String, dynamic> json) {
     return CounterDailyReadingServerModel(
-        date: DateFormat("yyyy-MM-dd").parse(json[DATE]),
+        date: DateFormat("yyyy-MM-ddTHH:mm:ss").parse(json[DATE]),
         counterNO: json[COUNTER_NO],
         counterReading: json[COUNTER_READING]);
   }

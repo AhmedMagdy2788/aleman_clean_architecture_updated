@@ -1,20 +1,22 @@
 import 'dart:developer';
 
-import 'package:aleman_clean_architecture_updated/core/entities/expanded_table.dart';
-import 'package:aleman_clean_architecture_updated/features/station_tasks/presentation/bloc/tablable_entities/station_details.dart';
+import 'package:aleman_clean_architecture_updated/core/models/json_model.dart';
+import 'package:aleman_clean_architecture_updated/core/models/server_model.dart';
 import 'package:dartz/dartz.dart';
 
+import '../../../../core/entities/expanded_table.dart';
 import '../../../../core/entities/expanded_row_entity.dart';
 import '../../../../core/entities/tablable_entity.dart';
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/network/network_info.dart';
+import '../../../../core/error/failures.dart';
 import '../../domain/entities/customer_entity.dart';
 import '../../domain/entities/customer_trucks_entity.dart';
 import '../../domain/entities/marketing_company_entity.dart';
 import '../../domain/entities/product_entity.dart';
 import '../../domain/entities/station_entity.dart';
-import '../../../../core/error/failures.dart';
 import '../../domain/entities/tanks_pumps_counters_entity.dart';
+import '../../presentation/bloc/tablable_entities/station_details.dart';
 import '../../domain/repositories/station_tasks_repository.dart';
 import '../datasources/raw_table_db_data_source.dart';
 import '../datasources/raw_table_json_data_source.dart';
@@ -208,35 +210,6 @@ class StationTasksRepositoryImpl implements StationTasksRepository {
     } else {
       try {
         throw UnimplementedError();
-      } on CacheException {
-        return const Left(CacheFailure());
-      }
-    }
-    return responce;
-  }
-
-  @override
-  Future<Either<Failure, List<TankEntity>>> getStationTanksDetailsRows(
-      StationEntity stationEntity) async {
-    log(stationEntity.toString());
-    Either<Failure, List<TankEntity>> responce;
-    if (await networkInfo.isConnected) {
-      //should call the remot data source to get number trivia
-      try {
-        List<TankServerModel> dbData = await dbDataSource.getRawTableRows(
-            '${TankServerModel.ENDPOINT}/GetByStationName',
-            TankServerModel.fromJson,
-            '?stationName=${stationEntity.name}');
-        // jsonDataSource.updateJsonSource(CustomerJSONModel.TABLENAME, dbData);
-        responce = Right(dbData);
-      } catch (e) {
-        responce = Left(ServerFailure(e.toString()));
-      }
-    } else {
-      try {
-        List<TankJSONModel> localData = await jsonDataSource.getRawTableRows(
-            CustomerJSONModel.TABLENAME, TankJSONModel.fromJson);
-        responce = Right(localData);
       } on CacheException {
         return const Left(CacheFailure());
       }
@@ -667,7 +640,7 @@ class StationTasksRepositoryImpl implements StationTasksRepository {
                     productName: tankEntity.productName,
                     tankNo: tankEntity.tankNo),
                 TankContaintTypeServerModel
-                    .fromJson) as TankContaintTypeServerModel;
+                    .fromJson);
         // responce = Right((addObject == tankEntity) ? true : false);
         responce = const Right(true);
       } catch (e) {
@@ -701,7 +674,7 @@ class StationTasksRepositoryImpl implements StationTasksRepository {
                 name: tankEntity.name,
                 stationName: tankEntity.stationName,
                 capacity: tankEntity.capacity),
-            TankServerModel.fromJson) as TankServerModel;
+            TankServerModel.fromJson);
         responce = Right(addObject.id);
       } catch (e) {
         responce = Left(ServerFailure(e.toString()));
@@ -736,7 +709,7 @@ class StationTasksRepositoryImpl implements StationTasksRepository {
                 productId: productEntity.productId,
                 productName: productEntity.productName,
                 productsCategory: productEntity.productsCategory),
-            ProductServerModel.fromMap) as ProductServerModel;
+            ProductServerModel.fromMap);
         // responce = Right((addObject == tankEntity) ? true : false);
         responce = Right(addObject.productId);
       } catch (e) {
@@ -775,7 +748,7 @@ class StationTasksRepositoryImpl implements StationTasksRepository {
                 productPurchasePriceEnitity.productPurchasePrice,
           ),
           ProductPurchasePriceServerModel.fromMap,
-        ) as ProductPurchasePriceServerModel;
+        );
         // responce = Right((addObject == tankEntity) ? true : false);
         responce = const Right(true);
       } catch (e) {
@@ -813,7 +786,7 @@ class StationTasksRepositoryImpl implements StationTasksRepository {
             productSalePrice: productSalePriceEnitity.productSalePrice,
           ),
           ProductSalePriceServerModel.fromMap,
-        ) as ProductSalePriceServerModel;
+        );
         // responce = Right((addObject == tankEntity) ? true : false);
         responce = const Right(true);
       } catch (e) {
@@ -833,6 +806,344 @@ class StationTasksRepositoryImpl implements StationTasksRepository {
     }
     return responce;
   }
+
+  ///* Tanks Controller Implementation///
+
+  @override
+  Future<Either<Failure, List<TankEntity>>> getAllTanks() async {
+    return await _getListOfEntities<TankEntity>(
+      serverEndPoint: TankServerModel.GetAll,
+      jsonEndpoint: CustomerJSONModel.TABLENAME,
+      serverCreateObject: TankServerModel.fromJson,
+      jsonCreateObject: TankJSONModel.fromJson,
+    );
+  }
+
+  @override
+  Future<Either<Failure, TankEntity>> getTankByTankNO(int tankNo) {
+    // TODO: implement getTankByTankNO
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Either<Failure, List<TankEntity>>> getTanksByStationName(
+      String stationName) async {
+    // TODO: implement getTankByTankNO
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Either<Failure, TankEntity>> addTank(TankEntity tankEntity) async {
+    // TODO: implement getTankByTankNO
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Either<Failure, List<TankEntity>>> addRangeOfTanks(
+      List<TankEntity> tankEntity) async {
+    // TODO: implement getTankByTankNO
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Either<Failure, TankEntity>> updateRangeOfTanks(
+      int tankNo, TankEntity tankEntity) async {
+    // TODO: implement getTankByTankNO
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Either<Failure, TankEntity>> deleteRangeOfTanks(int tankNo) async {
+    // TODO: implement getTankByTankNO
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Either<Failure, List<TankEntity>>> getStationTanksDetailsRows(
+      StationEntity stationEntity) async {
+    return await _getListOfEntities<TankEntity>(
+      serverEndPoint: '${TankServerModel.ENDPOINT}/GetByStationName',
+      jsonEndpoint: CustomerJSONModel.TABLENAME,
+      serverCreateObject: TankServerModel.fromJson,
+      jsonCreateObject: TankJSONModel.fromJson,
+      requestParams: '?stationName=${stationEntity.name}',
+    );
+  }
+
+  ///* PumpTankDetails controller Implementation *///
+  @override
+  Future<Either<Failure, List<PumpTankDetailEntity>>>
+      getPumpTankDetails() async {
+    return await _getListOfEntities<PumpTankDetailEntity>(
+      serverEndPoint: PumpTankDetailServerModel.ENDPOINT,
+      jsonEndpoint: PumpTankDetailJSONModel.TABLENAME,
+      serverCreateObject: PumpTankDetailServerModel.fromJson,
+      jsonCreateObject: PumpTankDetailJSONModel.fromJson,
+    );
+  }
+
+  @override
+  Future<Either<Failure, List<PumpTankDetailEntity>>> getAllPumpInstallations(
+      int pumpNo) async {
+    return await _getListOfEntities<PumpTankDetailEntity>(
+        serverEndPoint: PumpTankDetailServerModel.ENDPOINT +
+            PumpTankDetailServerModel.GetAllPumpInstallations,
+        jsonEndpoint: PumpTankDetailJSONModel.TABLENAME,
+        serverCreateObject: PumpTankDetailServerModel.fromJson,
+        jsonCreateObject: PumpTankDetailJSONModel.fromJson,
+        requestParams: "?pumpNo=$pumpNo");
+  }
+
+  @override
+  Future<Either<Failure, PumpTankDetailEntity>> getPumpTankDetailByIds(
+      DateTime date, int pumpNo) async {
+    //?date=2020-10-31&pumpNo=1
+    return await _getEntity<PumpTankDetailEntity>(
+        serverEndPoint: PumpTankDetailServerModel.ENDPOINT +
+            PumpTankDetailServerModel.GetPumpsTanksDetailById,
+        jsonEndpoint: PumpTankDetailJSONModel.TABLENAME,
+        serverCreateObject: PumpTankDetailServerModel.fromJson,
+        jsonCreateObject: PumpTankDetailJSONModel.fromJson,
+        requestParams: "?date=${date.toIso8601String()}&pumpNo=$pumpNo");
+  }
+
+  @override
+  Future<Either<Failure, List<PumpTankDetailDtoEntity>>>
+      getStationPumpTankDetailDtoAtGenralDate(
+          String stationName, DateTime date) async {
+    return await _getListOfEntities<PumpTankDetailDtoEntity>(
+        serverEndPoint: PumpTankDetailDtoServerModel.ENDPOINT +
+            PumpTankDetailDtoServerModel
+                .GetStationPumpTankDetailDtoAtGenralDate,
+        jsonEndpoint: PumpTankDetailDtoJSONModel.TABLENAME,
+        serverCreateObject: PumpTankDetailDtoServerModel.fromJson,
+        jsonCreateObject: PumpTankDetailDtoJSONModel.fromJson,
+        requestParams:
+            "?stationName=$stationName&date=${date.toIso8601String()}");
+  }
+
+  @override
+  Future<Either<Failure, PumpTankDetailEntity>> getPumpTanksAtGeneralDate(
+      DateTime date, int pumpNo) async {
+    return await _getEntity<PumpTankDetailEntity>(
+        serverEndPoint: PumpTankDetailServerModel.ENDPOINT +
+            PumpTankDetailServerModel.GetPumpTanksAtGeneralDate,
+        jsonEndpoint: PumpTankDetailJSONModel.TABLENAME,
+        serverCreateObject: PumpTankDetailServerModel.fromJson,
+        jsonCreateObject: PumpTankDetailJSONModel.fromJson,
+        requestParams: "?date=${date.toIso8601String()}&pumpNo=$pumpNo");
+  }
+
+  @override
+  Future<Either<Failure, PumpTankDetailEntity>> postPumpsTanksDetail(
+      PumpTankDetailEntity pumpTankDetailEntity) async {
+    return await _addEntity<PumpTankDetailEntity>(
+      serverEntity: PumpTankDetailServerModel.fromEntity(pumpTankDetailEntity),
+      jsonEntity: PumpTankDetailJSONModel.fromEntity(pumpTankDetailEntity),
+      serverEndPoint: PumpTankDetailServerModel.ENDPOINT,
+      jsonEndpoint: PumpTankDetailJSONModel.TABLENAME,
+      serverCreateObject: PumpTankDetailServerModel.fromJson,
+      jsonCreateObject: PumpTankDetailJSONModel.fromJson,
+    );
+  }
+
+  @override
+  Future<Either<Failure, PumpTankDetailEntity>> putPumpsTanksDetail(
+      DateTime date,
+      int pumpno,
+      PumpTankDetailEntity pumpTankDetailEntity) async {
+    return await _updateEntity<PumpTankDetailEntity>(
+      id: {
+        PumpTankDetailServerModel.DATE: date,
+        PumpTankDetailServerModel.PUMP_NO: pumpno
+      },
+      serverEntity: PumpTankDetailServerModel.fromEntity(pumpTankDetailEntity),
+      jsonEntity: PumpTankDetailJSONModel.fromEntity(pumpTankDetailEntity),
+      serverEndPoint: PumpTankDetailServerModel.ENDPOINT,
+      jsonEndpoint: PumpTankDetailJSONModel.TABLENAME,
+      serverCreateObject: PumpTankDetailServerModel.fromJson,
+      jsonCreateObject: PumpTankDetailJSONModel.fromJson,
+    );
+  }
+
+  @override
+  Future<Either<Failure, PumpTankDetailEntity>> deletePumpsTanksDetail(
+      DateTime date, int pumpNO) async {
+    return await _deleteEntity<PumpTankDetailEntity>(
+      id: {
+        PumpTankDetailServerModel.DATE: date,
+        PumpTankDetailServerModel.PUMP_NO: pumpNO
+      },
+      serverEndPoint: PumpTankDetailServerModel.ENDPOINT,
+      jsonEndpoint: PumpTankDetailJSONModel.TABLENAME,
+      serverCreateObject: PumpTankDetailServerModel.fromJson,
+      jsonCreateObject: PumpTankDetailJSONModel.fromJson,
+    );
+  }
+
+  ///* Gerneral Methods *///
+
+  Future<Either<Failure, List<Entity>>> _getListOfEntities<Entity>({
+    required String serverEndPoint,
+    required String jsonEndpoint,
+    required Entity Function(Map<String, dynamic>) serverCreateObject,
+    required Entity Function(Map<String, dynamic>) jsonCreateObject,
+    String? requestParams,
+  }) async {
+    Either<Failure, List<Entity>> responce;
+    if (await networkInfo.isConnected) {
+      //should call the remot data source to get number trivia
+      try {
+        List<Entity> dbData = await dbDataSource.getRawTableRows(
+            serverEndPoint, serverCreateObject, requestParams);
+        // jsonDataSource.updateJsonSource(CustomerJSONModel.TABLENAME, dbData);
+        responce = Right(dbData);
+      } catch (e) {
+        responce = Left(ServerFailure(e.toString()));
+      }
+    } else {
+      try {
+        List<Entity> localData = await jsonDataSource.getRawTableRows(
+            jsonEndpoint, jsonCreateObject);
+        responce = Right(localData);
+      } on CacheException {
+        return const Left(CacheFailure());
+      }
+    }
+    return responce;
+  }
+
+  Future<Either<Failure, Entity>> _getEntity<Entity>({
+    required String serverEndPoint,
+    required String jsonEndpoint,
+    required Entity Function(Map<String, dynamic>) serverCreateObject,
+    required Entity Function(Map<String, dynamic>) jsonCreateObject,
+    String? requestParams,
+  }) async {
+    Either<Failure, Entity> responce;
+    if (await networkInfo.isConnected) {
+      //should call the remot data source to get number trivia
+      try {
+        Entity dbData = await dbDataSource.getRawTableRow(
+            serverEndPoint, serverCreateObject, requestParams ?? "");
+        // jsonDataSource.updateJsonSource(CustomerJSONModel.TABLENAME, dbData);
+        responce = Right(dbData);
+      } catch (e) {
+        responce = Left(ServerFailure(e.toString()));
+      }
+    } else {
+      try {
+        Entity localData =
+            await jsonDataSource.getRawTableRow(jsonEndpoint, jsonCreateObject);
+        responce = Right(localData);
+      } on CacheException {
+        return const Left(CacheFailure());
+      }
+    }
+    return responce;
+  }
+
+  Future<Either<Failure, Entity>> _addEntity<Entity>({
+    required ServerModel serverEntity,
+    required JSONModel jsonEntity,
+    required String serverEndPoint,
+    required String jsonEndpoint,
+    required Entity Function(Map<String, dynamic>) serverCreateObject,
+    required Entity Function(Map<String, dynamic>) jsonCreateObject,
+  }) async {
+    Either<Failure, Entity> responce;
+    if (await networkInfo.isConnected) {
+      //should call the remot data source to get number trivia
+      try {
+        Entity dbData = await dbDataSource.addRowToRawTable<Entity>(
+            serverEndPoint, serverEntity, serverCreateObject);
+        // jsonDataSource.updateJsonSource(CustomerJSONModel.TABLENAME, dbData);
+        responce = Right(dbData);
+      } catch (e) {
+        responce = Left(ServerFailure(e.toString()));
+      }
+    } else {
+      try {
+        Entity localData = await jsonDataSource.addRowToRawTable<Entity>(
+            jsonEndpoint, jsonEntity, jsonCreateObject, null);
+        responce = Right(localData);
+      } on CacheException {
+        return const Left(CacheFailure());
+      }
+    }
+    return responce;
+  }
+
+  Future<Either<Failure, Entity>> _updateEntity<Entity>({
+    required ServerModel serverEntity,
+    required JSONModel jsonEntity,
+    required Map<String, dynamic> id,
+    required String serverEndPoint,
+    required String jsonEndpoint,
+    required Entity Function(Map<String, dynamic>) serverCreateObject,
+    required Entity Function(Map<String, dynamic>) jsonCreateObject,
+  }) async {
+    Either<Failure, Entity> responce;
+    if (await networkInfo.isConnected) {
+      //should call the remot data source to get number trivia
+      try {
+        Map<String, String> headers = {};
+        id.forEach((key, value) {
+          headers[key] = value.toString();
+        });
+        Entity dbData = await dbDataSource.updateRowToRawTable<Entity>(
+            serverEndPoint, id, serverEntity, serverCreateObject, headers);
+        // jsonDataSource.updateJsonSource(CustomerJSONModel.TABLENAME, dbData);
+        responce = Right(dbData);
+      } catch (e) {
+        responce = Left(ServerFailure(e.toString()));
+      }
+    } else {
+      try {
+        Entity localData = await jsonDataSource.updateRowToRawTable<Entity>(
+            jsonEndpoint, id, jsonEntity, jsonCreateObject);
+        responce = Right(localData);
+      } on CacheException {
+        return const Left(CacheFailure());
+      }
+    }
+    return responce;
+  }
+
+  Future<Either<Failure, Entity>> _deleteEntity<Entity>({
+    required Map<String, dynamic> id,
+    required String serverEndPoint,
+    required String jsonEndpoint,
+    required Entity Function(Map<String, dynamic>) serverCreateObject,
+    required Entity Function(Map<String, dynamic>) jsonCreateObject,
+  }) async {
+    Either<Failure, Entity> responce;
+    if (await networkInfo.isConnected) {
+      //should call the remot data source to get number trivia
+      try {
+        Map<String, String> headers = {};
+        id.forEach((key, value) {
+          headers[key] = value.toString();
+        });
+        Entity dbData = await dbDataSource.deleteRowToRawTable<Entity>(
+            serverEndPoint, id, serverCreateObject, headers);
+        // jsonDataSource.updateJsonSource(CustomerJSONModel.TABLENAME, dbData);
+        responce = Right(dbData);
+      } catch (e) {
+        responce = Left(ServerFailure(e.toString()));
+      }
+    } else {
+      try {
+        Entity localData = await jsonDataSource.deleteRowToRawTable<Entity>(
+            jsonEndpoint, id, jsonCreateObject);
+        responce = Right(localData);
+      } on CacheException {
+        return const Left(CacheFailure());
+      }
+    }
+    return responce;
+  }
+
   // Future<Either<Failure, List<T>>> _getRawData<T>(String mainUri,
   //     String uriParams, T Function(Map<String, dynamic>) createFn) async {
   //   Either<Failure, List<T>> responce;

@@ -130,20 +130,18 @@ class _DatePickerPage extends State<DatePickerWidget> {
         ) ??
         widget.initDate;
 
-    if (pickedDate != null) {
-      widget.updateDate(pickedDate);
-      // if (widget.controller != null) {
-      controller.text = pickedDate.toString();
-      log('Date Controller value = ${controller.text}');
-      // }
-      log(pickedDate
-          .toString()); //pickedDate output format => 2021-03-10 00:00:00.000
-      String formattedDate =
-          "${DateFormat('EEEE').format(pickedDate)}, ${DateFormat('dd-MMM-yyyy').format(pickedDate)}";
-      setState(() {
-        controller.text = formattedDate; //set output date to TextField value.
-        log(formattedDate); //formatted date output using intl package =>  2021-03-16
-      });
-    }
+    widget.updateDate(pickedDate);
+    // if (widget.controller != null) {
+    controller.text = pickedDate.toString();
+    log('Date Controller value = ${controller.text}');
+    // }
+    log(pickedDate
+        .toString()); //pickedDate output format => 2021-03-10 00:00:00.000
+    String formattedDate =
+        "${DateFormat('EEEE').format(pickedDate)}, ${DateFormat('dd-MMM-yyyy').format(pickedDate)}";
+    setState(() {
+      controller.text = formattedDate; //set output date to TextField value.
+      log(formattedDate); //formatted date output using intl package =>  2021-03-16
+    });
   }
 }

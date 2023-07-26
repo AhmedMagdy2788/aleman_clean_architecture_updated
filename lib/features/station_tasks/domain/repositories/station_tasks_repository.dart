@@ -53,4 +53,41 @@ abstract class StationTasksRepository {
       ProductPurchasePriceEnitity productPurchasePriceEnitity);
   Future<Either<Failure, bool>> addProductSalePrice(
       ProductSalePriceEnitity productSalePriceEnitity);
+
+  ///* PumpTankDetails Controller *///
+  Future<Either<Failure, List<PumpTankDetailEntity>>> getPumpTankDetails();
+
+  Future<Either<Failure, PumpTankDetailEntity>> getPumpTankDetailByIds(
+      DateTime date, int pumpNo);
+
+  Future<Either<Failure, PumpTankDetailEntity>> getPumpTanksAtGeneralDate(
+      DateTime date, int pumpNo);
+
+  Future<Either<Failure, List<PumpTankDetailEntity>>> getAllPumpInstallations(
+      int pumpNo);
+
+  Future<Either<Failure, List<PumpTankDetailEntity>>>
+      getStationPumpTankDetailDtoAtGenralDate(
+          String stationName, DateTime date);
+
+  Future<Either<Failure, PumpTankDetailEntity>> postPumpsTanksDetail(
+      PumpTankDetailEntity pumpTankDetailEntity);
+
+  Future<Either<Failure, PumpTankDetailEntity>> putPumpsTanksDetail(
+      DateTime date, int pumpno, PumpTankDetailEntity pumpTankDetailEntity);
+
+  Future<Either<Failure, PumpTankDetailEntity>> deletePumpsTanksDetail(
+      DateTime date, int pumpNO);
+
+  ///* Tanks controller *///
+  Future<Either<Failure, List<TankEntity>>> getAllTanks();
+  Future<Either<Failure, TankEntity>> getTankByTankNO(int tankNo);
+  Future<Either<Failure, List<TankEntity>>> getTanksByStationName(
+      String stationName);
+  Future<Either<Failure, TankEntity>> addTank(TankEntity tankEntity);
+  Future<Either<Failure, List<TankEntity>>> addRangeOfTanks(
+      List<TankEntity> tankEntity);
+  Future<Either<Failure, TankEntity>> updateRangeOfTanks(
+      int tankNo, TankEntity tankEntity);
+  Future<Either<Failure, TankEntity>> deleteRangeOfTanks(int tankNo);
 }

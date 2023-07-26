@@ -230,3 +230,57 @@ class TankEquilibriumTablable extends TablableEntity<TankEquilibriumEntity> {
     };
   }
 }
+
+///* pumps Tanks Details ////
+
+class PumpTankDetailTablable extends TablableEntity<PumpTankDetailDtoEntity> {
+  static const String DATE = "Date";
+  static const String PUMP_NO = "Pump No";
+  static const String PUMP_NAME = "Pump Name";
+  static const String TANK_NO = "Tank No";
+  static const String TANK_NAME = "Tank Name";
+  static const String TANK_CONTENT_TYPE = "Tank Content Type";
+
+  PumpTankDetailTablable(PumpTankDetailDtoEntity pumpTankDetail)
+      : super(pumpTankDetail);
+
+  @override
+  get id => [entity.date, entity.pumpNo];
+
+  @override
+  bool selected = false;
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      DATE: DateFormat("yyyy-MM-dd").format(entity.date),
+      PUMP_NO: entity.pumpNo,
+      PUMP_NAME: entity.pumpName,
+      TANK_NO: entity.tankNo,
+      TANK_NAME: entity.tankName,
+      TANK_CONTENT_TYPE: entity.tankContentType,
+    };
+  }
+}
+
+class PumpTankDetailTableDataSouce
+    extends TableDataSource<PumpTankDetailEntity> {
+  PumpTankDetailTableDataSouce(List<PumpTankDetailDtoEntity> equatableDataList)
+      : super(dataList: [], title: "Pumps and Tanks Details") {
+    for (var element in equatableDataList) {
+      super.dataList.add(PumpTankDetailTablable(element));
+    }
+  }
+
+  @override
+  Map<String, Type> get columns {
+    final columns = <String, Type>{};
+    columns[PumpTankDetailTablable.DATE] = DateTime;
+    columns[PumpTankDetailTablable.PUMP_NO] = int;
+    columns[PumpTankDetailTablable.PUMP_NAME] = String;
+    columns[PumpTankDetailTablable.TANK_NO] = int;
+    columns[PumpTankDetailTablable.TANK_NAME] = String;
+    columns[PumpTankDetailTablable.TANK_CONTENT_TYPE] = String;
+    return columns;
+  }
+}

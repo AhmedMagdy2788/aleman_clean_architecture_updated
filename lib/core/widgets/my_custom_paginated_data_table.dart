@@ -178,12 +178,14 @@ class MyCustomPaginatedDataTable extends StatelessWidget {
   const MyCustomPaginatedDataTable(
       {super.key,
       required this.dataSource,
-      this.rowHeight = 60,
+      this.maxRowHeight = 60,
+      this.minRowHeight = 30,
       required this.tableTitle});
 
   final DataSource dataSource;
   final String tableTitle;
-  final double rowHeight;
+  final double maxRowHeight;
+  final double minRowHeight;
 
   @override
   Widget build(BuildContext context) {
@@ -205,9 +207,11 @@ class MyCustomPaginatedDataTable extends StatelessWidget {
         headingRowHeight: 50,
         checkboxHorizontalMargin: 0,
         availableRowsPerPage: const [5, 10, 15],
-        dataRowHeight: rowHeight,
+        dataRowMaxHeight: maxRowHeight,
+        dataRowMinHeight: minRowHeight,
         showFirstLastButtons: true,
-        rowsPerPage: ((constraints.maxHeight - 16 - 200) / rowHeight).round(),
+        rowsPerPage:
+            ((constraints.maxHeight - 16 - 200) / maxRowHeight).round(),
         header: Row(
           children: [
             SelectableText(tableTitle),

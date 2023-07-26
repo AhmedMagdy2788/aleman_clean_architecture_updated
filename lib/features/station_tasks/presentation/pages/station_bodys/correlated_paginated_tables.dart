@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/entities/tablable_entity.dart';
-import '../../../../../core/widgets/my_custom_paginated_data_table.dart';
 import '../../bloc/correlated_data_table_bloc/correlated_data_bloc_bloc.dart';
 import '../../../../../core/entities/data_source.dart';
 import '../../../../../core/widgets/paginated_table_widget.dart';

@@ -1,5 +1,4 @@
 // ignore_for_file: constant_identifier_names
-import '../../../../../core/models/json_model.dart';
 import '../../../../../core/models/server_model.dart';
 import '../../../domain/entities/user_entity.dart';
 

@@ -1,8 +1,6 @@
-import 'dart:io' as io;
 import 'dart:convert';
 import 'dart:developer';
 
-import 'package:equatable/equatable.dart';
 import 'package:flutter/services.dart';
 
 import '../../../../core/models/expanded_row_model.dart';
@@ -15,10 +13,25 @@ abstract class RawTableJsonDataSource {
   Future<List<TablableModel>> getRawTableRows<TablableModel>(String tableName,
       TablableModel Function(Map<String, dynamic>) createObject,
       [bool Function(TablableModel)? filterFunction]);
-  Future<bool> addRowToRawTable(String tableName, JSONModel object,
+  Future<TablableModel> getRawTableRow<TablableModel>(String tableName,
+      TablableModel Function(Map<String, dynamic>) createObject,
+      [bool Function(TablableModel)? filterFunction]);
+  Future<Model> addRowToRawTable<Model>(
+      String tableName,
+      JSONModel object,
+      Model Function(Map<String, dynamic> modelAsJSON) createModel,
       bool Function(JSONModel)? validationFunciton);
-  Future<void> updateRowToRawTable(String tableName, dynamic id, JSONModel row);
-  Future<void> deleteRowToRawTable(String tableName, dynamic id);
+  Future<Model> updateRowToRawTable<Model>(
+    String tableName,
+    dynamic id,
+    JSONModel row,
+    Model Function(Map<String, dynamic> modelAsJSON) createModel,
+  );
+  Future<Model> deleteRowToRawTable<Model>(
+      String endPoint,
+      Map<String, dynamic> id,
+      Model Function(Map<String, dynamic> modelAsJSON) createModel,
+      [Map<String, String> headers = const {}]);
   Future<void> updateJsonSource(String tableName, List<JSONModel> rows);
 }
 
@@ -54,64 +67,51 @@ class RawTableJsonDataSourceImpl implements RawTableJsonDataSource {
     }
   }
 
-  @override
-  Future<bool> addRowToRawTable(String tableName, JSONModel object,
-      bool Function(JSONModel object)? validationFunciton) async {
-    String jsonFileName = tableName;
-    try {
-      List<dynamic> jsonList = [];
-      try {
-        // Get the json file from the assets folder
-        final String jsonString =
-            await rootBundle.loadString('assets/data/$jsonFileName.json');
+  // @override
+  // Future<bool> addRowToRawTable(String tableName, JSONModel object,
+  //     bool Function(JSONModel object)? validationFunciton) async {
+  //   String jsonFileName = tableName;
+  //   try {
+  //     List<dynamic> jsonList = [];
+  //     try {
+  //       // Get the json file from the assets folder
+  //       final String jsonString =
+  //           await rootBundle.loadString('assets/data/$jsonFileName.json');
 
-        // Convert the json string to a list of objects
-        jsonList = jsonDecode(jsonString);
-      } catch (e) {
-        log('Error while reading the json file: $e');
-        return false;
-      }
+  //       // Convert the json string to a list of objects
+  //       jsonList = jsonDecode(jsonString);
+  //     } catch (e) {
+  //       log('Error while reading the json file: $e');
+  //       return false;
+  //     }
 
-      if (validationFunciton != null) {
-        for (var element in jsonList) {
-          if (!validationFunciton(element)) {
-            return false;
-          }
-        }
-      }
-      // Add the new object to the list
-      jsonList.add(object.toJson());
+  //     if (validationFunciton != null) {
+  //       for (var element in jsonList) {
+  //         if (!validationFunciton(element)) {
+  //           return false;
+  //         }
+  //       }
+  //     }
+  //     // Add the new object to the list
+  //     jsonList.add(object.toJson());
 
-      // Convert the list back to a json string
-      String newJsonString = jsonEncode(jsonList);
+  //     // Convert the list back to a json string
+  //     String newJsonString = jsonEncode(jsonList);
 
-      try {
-        // Write the new string back to the file
-        await io.File('assets/data/$jsonFileName.json')
-            .writeAsString(newJsonString);
-        return true;
-      } catch (e) {
-        log('Error while writing the json file: $e');
-        return false;
-      }
-    } catch (e) {
-      log('Error : ${e.toString()}');
-      return false;
-    }
-  }
-
-  @override
-  Future<void> deleteRowToRawTable(String tableName, id) {
-    // TODO: implement deleteRowToRawTable
-    throw UnimplementedError();
-  }
-
-  @override
-  Future<List<Equatable>> filterRawTableRows(
-      String tableName, bool Function(Equatable object) where) {
-    // TODO: implement filterRawTableRows
-    throw UnimplementedError();
-  }
+  //     try {
+  //       // Write the new string back to the file
+  //       await io.File('assets/data/$jsonFileName.json')
+  //           .writeAsString(newJsonString);
+  //       return true;
+  //     } catch (e) {
+  //       log('Error while writing the json file: $e');
+  //       return false;
+  //     }
+  //   } catch (e) {
+  //     log('Error : ${e.toString()}');
+  //     return false;
+  //   }
+  // }
 
   @override
   Future<void> updateJsonSource(String tableName, List<JSONModel> rows) {
@@ -120,7 +120,12 @@ class RawTableJsonDataSourceImpl implements RawTableJsonDataSource {
   }
 
   @override
-  Future<void> updateRowToRawTable(String tableName, id, JSONModel row) {
+  Future<Model> updateRowToRawTable<Model>(
+    String tableName,
+    dynamic id,
+    JSONModel row,
+    Model Function(Map<String, dynamic> modelAsJSON) createModel,
+  ) {
     // TODO: implement updateRowToRawTable
     throw UnimplementedError();
   }
@@ -287,5 +292,33 @@ class RawTableJsonDataSourceImpl implements RawTableJsonDataSource {
       expandedRow.rowData[row.productName] = row.quantity;
     }
     return expandedList;
+  }
+
+  @override
+  Future<TablableModel> getRawTableRow<TablableModel>(String tableName,
+      TablableModel Function(Map<String, dynamic> p1) createObject,
+      [bool Function(TablableModel p1)? filterFunction]) {
+    // TODO: implement getRawTableRow
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Model> addRowToRawTable<Model>(
+      String tableName,
+      JSONModel object,
+      Model Function(Map<String, dynamic> modelAsJSON) createModel,
+      bool Function(JSONModel p1)? validationFunciton) {
+    // TODO: implement addRowToRawTable
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Model> deleteRowToRawTable<Model>(
+      String endPoint,
+      Map<String, dynamic> id,
+      Model Function(Map<String, dynamic> modelAsJSON) createModel,
+      [Map<String, String> headers = const {}]) {
+    // TODO: implement deleteRowToRawTable
+    throw UnimplementedError();
   }
 }

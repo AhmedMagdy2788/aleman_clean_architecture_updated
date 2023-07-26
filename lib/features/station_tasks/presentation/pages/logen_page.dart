@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class LoginWidget extends StatefulWidget {
@@ -78,8 +80,8 @@ class LoginWidgetState extends State<LoginWidget> {
                               // Validate and submit the form
                               if (_formKey.currentState!.validate()) {
                                 // Do something with the username and password
-                                print('Username: ${_usernameController.text}');
-                                print('Password: ${_passwordController.text}');
+                                log('Username: ${_usernameController.text}');
+                                log('Password: ${_passwordController.text}');
                               }
                             }
                           : null, // Disable the button if username or password is empty
@@ -99,7 +101,7 @@ class LoginWidgetState extends State<LoginWidget> {
                       child: const Text('Forgot Password?'),
                       onPressed: () {
                         // Do something when the user taps on the link
-                        print('Forgot Password');
+                        log('Forgot Password');
                       },
                     )
                   ],

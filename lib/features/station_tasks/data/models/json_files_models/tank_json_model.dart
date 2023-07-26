@@ -210,6 +210,88 @@ class PumpOnTankJSONModel extends PumpOnTankEntity implements JSONModel {
   }
 }
 
+class PumpTankDetailDtoJSONModel extends PumpTankDetailDtoEntity
+    implements JSONModel {
+  static const String TABLENAME = 'tblPumpsTanksDetails';
+  static const String DATE = "date";
+  static const String PUMP_NO = "pump_no";
+  static const String PUMP_NAME = "pump_name";
+  static const String TANK_NO = "tank_no";
+  static const String TANK_NAME = "tank_name";
+  static const String TANK_CONTENT_TYPE = "tank_content_type";
+
+  const PumpTankDetailDtoJSONModel({
+    required super.date,
+    required super.pumpNo,
+    required super.pumpName,
+    required super.tankNo,
+    required super.tankName,
+    required super.tankContentType,
+  });
+
+  factory PumpTankDetailDtoJSONModel.fromJson(Map<String, dynamic> json) {
+    return PumpTankDetailDtoJSONModel(
+      date: DateFormat("yyyy-MM-dd").parse(json[DATE]),
+      pumpNo: json[PUMP_NO],
+      pumpName: json[PUMP_NAME],
+      tankNo: json[TANK_NO],
+      tankName: json[TANK_NAME],
+      tankContentType: json[TANK_CONTENT_TYPE],
+    );
+  }
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      DATE: DateFormat("yyyy-MM-dd").format(date),
+      PUMP_NO: pumpNo,
+      PUMP_NAME: pumpName,
+      TANK_NO: tankNo,
+      TANK_NAME: tankName,
+      TANK_CONTENT_TYPE: tankContentType,
+    };
+  }
+}
+
+class PumpTankDetailJSONModel extends PumpTankDetailEntity
+    implements JSONModel {
+  static const String TABLENAME = 'tblPumpsTanksDetails';
+  static const String DATE = "date";
+  static const String PUMP_NO = "pump_no";
+  static const String TANK_NO = "tank_no";
+
+  const PumpTankDetailJSONModel({
+    required super.date,
+    required super.pumpNo,
+    required super.tankNo,
+  });
+
+  factory PumpTankDetailJSONModel.fromEntity(PumpTankDetailEntity entity) {
+    return PumpTankDetailJSONModel(
+      date: entity.date,
+      pumpNo: entity.pumpNo,
+      tankNo: entity.tankNo,
+    );
+  }
+
+  factory PumpTankDetailJSONModel.fromJson(Map<String, dynamic> json) {
+    return PumpTankDetailJSONModel(
+      date: DateFormat("yyyy-MM-dd").parse(json[DATE]),
+      pumpNo: json[PUMP_NO],
+      tankNo: json[TANK_NO],
+    );
+  }
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      DATE: DateFormat("yyyy-MM-dd").format(date),
+      PUMP_NO: pumpNo,
+      TANK_NO: tankNo,
+    };
+  }
+}
+
 class CounterJSONModel extends CounterEntity implements JSONModel {
   static const String TABLENAME = 'tblstationscounters';
   static const String COUNTER_ID = "counter_no";

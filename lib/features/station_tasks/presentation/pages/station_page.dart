@@ -34,13 +34,13 @@ class MainLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider<StationTasksBloc>(
       create: (context) => sl(),
-      child: SizedBox(
+      child: const SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             // const SideNavigationRail(),
             Sidebar(),
             Body(),

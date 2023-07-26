@@ -16,4 +16,12 @@ class ExpandedRowModel extends ExpandedRowEntity implements JSONModel {
 
   @override
   String toString() => toJson().toString();
+
+  @override
+  // TODO: implement props
+  List<Object?> get props => throw UnimplementedError();
+
+  @override
+  // TODO: implement stringify
+  bool? get stringify => throw UnimplementedError();
 }

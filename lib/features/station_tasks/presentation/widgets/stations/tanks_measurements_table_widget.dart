@@ -116,7 +116,8 @@ class TanksMeasurementsTableWidget extends StatelessWidget {
             color: MaterialStateProperty.all(Colors.blueGrey[600])),
       ],
       headingRowColor: MaterialStateProperty.all(Colors.blueGrey[900]),
-      dataRowHeight: 75,
+      dataRowMaxHeight: 75,
+      dataRowMinHeight: 45,
       horizontalMargin: 0,
     );
   }

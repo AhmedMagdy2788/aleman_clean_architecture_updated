@@ -318,6 +318,7 @@ class MyCustomDropDownSearchWidget<T> extends StatelessWidget {
           validator: (value) {
             log('selected $label = $value');
             if (value == null) return errorText ?? "please Select value";
+            return null;
           },
           clearButtonProps: const ClearButtonProps(icon: Icon(Icons.close)),
           dropdownDecoratorProps: DropDownDecoratorProps(
